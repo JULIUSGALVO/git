@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird Clouds</title>
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ako hahaha</h1>
-    <h2>ito binago ko</h2>
-    <h3>dito ko makikita kung ano yung binago ko</h3>
+  <div id="gameContainer">
+    <div id="score">Score: 0</div>
 
-    <!-- I-link natin yung JS file dito -->
-    <script src="script.js"></script>
+    <div id="gameArea">
+      <i id="bird" class="bx bx-bird box-icon"></i>
+      
+      <!-- Settings button -->
+      <i id="settingsBtn" class='bx bx-cog'></i>
+
+      <!-- Pause Overlay -->
+      <div class="overlay" id="pauseScreen">
+        <h2>Paused</h2>
+        <button id="continueBtn">Continue</button>
+        <button id="retryBtn">Retry</button>
+      </div>
+
+      <!-- Countdown Overlay -->
+      <div class="overlay" id="countdownScreen" style="display:none;">
+        <h1 id="countdownText">3</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
